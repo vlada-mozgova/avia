@@ -1,0 +1,131 @@
+.FrontBar-section-2 {
+  position: fixed;
+  overflow: scroll;
+  overflow-x: hidden;
+  top: 17%;
+  bottom: 0;
+  left: 31.8%;
+  right: 10%;
+  box-shadow: 0 0 6px 2px rgb(206, 206, 206);
+}
+.FrontBar-section-2::-webkit-scrollbar {
+  width: 0;
+}
+.FrontBar-ticket {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  width: 100%;
+  margin-bottom: 3%;
+  box-shadow: 0 0 6px 2px rgb(206, 206, 206);
+}
+.FrontBar-ticket:hover {
+  box-shadow: 0 0 8px 5px rgb(206, 206, 206);
+}
+.FrontBar-buy {
+  border-radius: 7px 0 0 7px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+.FrontBar-button {
+  border-radius: 7px;
+  background-color: rgb(243, 101, 7);
+  color: white;
+  text-align: center;
+  width: 90%;
+  padding: 5px;
+  cursor: pointer;
+}
+.FrontBar-button:active {
+  background-color: rgb(218, 80, 0);
+  box-shadow: 0 0 6px 2px rgb(206, 206, 206);
+}
+.img {
+  align-self: center;
+  width: 80%;
+  padding-bottom: 13%;
+}
+.FrontBar-flight {
+  border-radius: 0 7px 7px 0;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.cities {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  color: rgb(63, 63, 63);
+  font-weight: 500;
+}
+.dates {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+.line {
+  width: 2px;
+}
+.time {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  color: rgb(63, 63, 63);
+  font-size: xxx-large;
+  font-weight: 500;
+  padding-top: 2%;
+  position: relative;
+}
+.stops {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  color: rgb(129, 129, 129);
+  font-size: small;
+  font-weight: 500;
+  padding-top: 3%;
+  position: absolute;
+  left: 15%;
+}
+.stops-count {
+  align-self: center;
+  position: absolute;
+}
+.plane {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
+  align-items: center;
+}
+.plane-line {
+  position: relative;
+  margin-left: 35%;
+}
+.plane-line::before,
+.plane-line::after {
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  background: rgb(119, 118, 118);
+  clip-path: polygon(0 0, 120px 0, 120px 1px, 0 1px);
+}
+.picPlane {
+  width: 6%;
+  padding-right: 32%;
+}
+@media screen and (max-width: 910px) {
+  .FrontBar-section-2 {
+    right: 3%;
+    left: 3%;
+    top: 51.5%;
+  }
+}

@@ -1,0 +1,176 @@
+.SideBar-section-1 {
+  border-radius: 7px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 246px;
+  box-shadow: 0 0 6px 2px rgb(206, 206, 206);
+  display: flex;
+  flex-direction: column;
+  top: 17%;
+  right: 70%;
+}
+.SideBar-box {
+  display: flex;
+  flex-direction: column;
+}
+.SideBar-currency {
+  padding: 5%;
+  padding-top: 0%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.SideBar-currency-button {
+  flex-basis: 23%;
+  align-self: center;
+  text-align: center;
+  color: rgb(94, 153, 240);
+  font-weight: 500;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(231, 231, 231);
+  padding: 10px;
+  cursor: pointer;
+}
+.SideBar-currency-button:first-child {
+  border-radius: 7px 0 0 7px;
+  border: 2px solid rgb(231, 231, 231);
+}
+.SideBar-currency-button:last-child {
+  border-radius: 0 7px 7px 0;
+  border: 2px solid rgb(231, 231, 231);
+}
+.SideBar-currency-button:hover {
+  border: 2px solid rgb(94, 153, 240);
+  background-color: rgb(242, 247, 255);
+}
+.SideBar-currency-button:active {
+  border: 2px solid rgb(94, 153, 240);
+  background-color: rgb(223, 236, 255);
+}
+.SideBar-currency-button-checked {
+  flex-basis: 23%;
+  align-self: center;
+  text-align: center;
+  font-weight: 500;
+  border: 2px solid rgb(94, 153, 240);
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(94, 153, 240);
+  color: white;
+}
+.SideBar-currency-button-checked:first-child {
+  border-radius: 7px 0 0 7px;
+}
+.SideBar-currency-button-checked:last-child {
+  border-radius: 0 7px 7px 0;
+}
+.SideBar-text-find {
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: Bahnschrift SemiBold;
+}
+.SideBar-checkbox-all {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-bottom: 5%;
+}
+.SideBar-checkbox {
+  padding: 3%;
+  padding-bottom: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  position: relative;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  visibility: hidden;
+}
+.SideBar-text-checkbox {
+  cursor: pointer;
+  margin-left: 10%;
+}
+.geekmark {
+  margin-left: 5%;
+  cursor: pointer;
+  position: absolute;
+  top: 1;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid rgb(231, 231, 231);
+  border-radius: 5px;
+}
+.SideBar-checkbox:hover input ~ .geekmark {
+  border: 2px solid rgb(143, 184, 245);
+}
+.SideBar-checkbox:hover {
+  background-color: rgba(232, 238, 247, 0.9);
+}
+.SideBar-checkbox input:active ~ .geekmark {
+  border: 2px solid rgb(143, 184, 245);
+}
+.SideBar-checkbox input:checked ~ .geekmark {
+  border: 2px solid rgb(94, 153, 240);
+}
+.geekmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(94, 153, 240);
+  clip-path: polygon(45% 64%, 84% 14%, 100% 28%, 47% 100%, 0 49%, 15% 32%);
+}
+.SideBar-checkbox input:checked ~ .geekmark:after {
+  display: block;
+  transform: scale(0.5);
+}
+@media screen and (max-width: 910px) {
+  .SideBar-section-1 {
+    left: 23%;
+    flex-direction: row;
+    /* width: 68%; */
+    width: 450px;
+  }
+  .SideBar-currency {
+    margin-left: 7%;
+  }
+  .SideBar-text-find {
+    margin-bottom: 2%;
+    width: 100%;
+    padding-left: 4%;
+  }
+  .SideBar-box {
+    margin-left: 5%;
+    align-content: center;
+  }
+}
+@media screen and (max-width: 730px) {
+  .SideBar-section-1 {
+    left: 18%;
+  }
+}
+@media screen and (max-width: 660px) {
+  .SideBar-section-1 {
+    left: 12%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .SideBar-section-1 {
+    left: 8%;
+  }
+}
+@media screen and (max-width: 515px) {
+  .SideBar-section-1 {
+    left: 5%;
+  }
+}

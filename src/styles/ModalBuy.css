@@ -1,0 +1,99 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(129, 129, 129, 0.719);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  pointer-events: none;
+}
+.modal.show {
+  opacity: 1;
+  pointer-events: visible;
+}
+.modal-content {
+  width: 350px;
+  color: rgb(138, 138, 138);
+  font-weight: 500;
+  background-color: white;
+  border-radius: 7px;
+  cursor: auto;
+  box-shadow: 0 0 3px 2px rgb(206, 206, 206);
+}
+.modal-header,
+.modal-footer {
+  padding: 15px;
+  text-align: center;
+}
+.modal-title {
+  margin: 0;
+}
+.modal-body {
+  padding: 5%;
+  padding-bottom: 0;
+  padding-top: 10px;
+  border: 2px solid rgb(209, 209, 209);
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: relative;
+}
+.button {
+  outline: none;
+  margin: 10px;
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(94, 153, 240);
+  font-weight: 700;
+  border: 2px solid rgb(182, 182, 182);
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.button:active {
+  border: 2px solid rgb(94, 153, 240);
+  background-color: rgb(236, 244, 255);
+}
+.input-data {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  position: relative;
+}
+.errors {
+  margin-left: 5px;
+  margin-top: 3px;
+  color: red;
+  font-size: xx-small;
+}
+.input {
+  outline: none;
+  font-family: inherit;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  width: 302px;
+  height: 25px;
+  color: rgb(112, 112, 112);
+  background-color: rgba(245, 245, 245, 0.39);
+  border: 2px solid rgb(182, 182, 182);
+  border-radius: 7px;
+}
+.input:focus {
+  border-color: rgb(169, 200, 248);
+  box-shadow: 0 0 6px 2px rgb(195, 217, 250);
+}
